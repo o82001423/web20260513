@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        /* 控制所有 inline 或 inline-block 元素的對齊 */
+        text-align: center; 
+    }
+
+    /* 設定 inline 元素 (會發現寬高沒反應) */
+    span, a {
+        display: inline;
+        width: 50px;  /* ❌ 無效 */
+        height: 50px;  /* ❌ 無效 */
+        background-color: #ffcccc;
+        border: 1px solid red;
+        margin: 5px;
+    }
+
+    /* 設定 inline-block 元素 (寬高會生效) */
+    button {
+        display: inline-block;
+        width: 55px;  /* ✅ 有效 */
+        height: 40px;  /* ✅ 有效 */
+        background-color: #ccffcc;
+        border: 1px solid green;
+        margin: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <h3>inline 不換行 不可調整大小</h3>
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <a href="">linka</a>
+    <a href="">linkb</a>
+    <a href="">linkc</a>
+    <H3>inline-block 不換行 可調整大小</H3>
+    <button type="button">button1</button>
+    <button type="button">button2</button>
+    <button type="button">button3</button>
+    <button type="button">button4</button>
+</body>
+
+</html>

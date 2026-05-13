@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .box{
+        height: 200px;
+        background-color: lightblue;
+        padding-top: 20px;
+        text-align: right;
+        
+        
+    }
+    a{
+       
+        display:inline-block;
+        width: 150px;
+        height: 150px;
+        background-color: lightgoldenrodyellow;
+        margin-left: 5%;
+        vertical-align: top;
+        /* 解決方法: 統一對齊方式，不論有沒有字都靠頂部對齊 */    
+    }
+</style>
+<body>
+    <div class="box">
+        <a href="">link</a>
+        <a href=""> </a><!-- 空盒子現在會乖乖排隊了 -->
+        <a href="">link</a>
+    </div>
+</body>
+</html>

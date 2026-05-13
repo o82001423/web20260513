@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box,
+    .box1,
+    .box2 {
+        
+        width: 300px;
+        height: 300px;
+        background-color: lightblue;
+
+        margin-top: 50px;
+        margin-left: 50px;
+
+        padding-top: 100px;
+        padding-left: 100px;
+        border: 20px solid gold;
+    }
+
+    .box1 {
+        background-color: lightgreen;
+        box-sizing: content-box;
+    }
+
+    .box2 {
+        box-sizing: border-box;
+        background-color: rgb(217, 235, 62);
+    }
+
+    .box {
+        background-color: #ffcc00;
+        border: 2px solid #333;
+        /* 試著給所有盒子設定寬高 */
+        width: 100px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    /* 1. Inline：完全無視寬高，擠在一起 */
+    .inline {
+        display: inline;
+    }
+
+    /* 2. Block：雖然有寬高，但一人佔領一整行 */
+    .block {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* 3. Inline-Block：最完美！可以並排，又有寬高 */
+    .inline-block {
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus enim officia aliquam consectetur, ipsa
+        ex modi iure, veritatis maxime libero et esse adipisci, natus fugiat quis iste sapiente sequi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus enim officia aliquam consectetur, ipsa
+        ex modi iure, veritatis maxime libero et esse adipisci, natus fugiat quis iste sapiente sequi.
+
+    </div>
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus enim officia aliquam consectetur, ipsa
+        ex modi iure, veritatis maxime
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus enim officia aliquam consectetur, ipsa
+        ex modi iure, veritatis maxime
+    </div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus enim officia aliquam consectetur, ipsa
+        ex modi iure, veritatis maxime
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus enim officia aliquam consectetur, ipsa
+        ex modi iure, veritatis maxime
+    </div>
+    <div class="container">
+        <div class="box inline">Inline</div>
+        <div class="box inline">Inline</div>
+        <div class="box block">Block</div>
+        <div class="box block">Block</div>
+        <div class="box inline-block">Inline-Block</div>
+        <div class="box inline-block">Inline-Block</div>
+    </div>
+</body>
+
+</html>

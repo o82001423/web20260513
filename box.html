@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .h1 {
+        height: 200px;
+        background-color: black;
+    }
+    .h1_1{
+        padding-left: 500px;
+    }
+
+    /* 1. 容器：設為相對定位，讓內部的選單對齊它 */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* 2. 按鈕：利用你學過的 padding 讓它好看 */
+    .dropbtn {
+        background-color: #3498db;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    /* 3. 選單內容：預設隱藏 (display: none) */
+    .dropdown-content {
+        display: none;
+        /* 平常看不到 */
+        position: absolute;
+        /* 絕對定位：不影響其他元素位置 */
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        /* 增加陰影更有層次 */
+        z-index: 1;
+        /* 確保它在最上層 */
+    }
+
+    /* 4. 選單內的連結：調整間距與樣式 */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        /* 這裡的 padding 決定了選項的高度 */
+        text-decoration: none;
+        display: block;
+        /* 讓連結佔滿整行，比較好點擊 */
+    }
+
+    /* 5. 滑鼠滑過選項時變色 */
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* 6. 重點：當滑鼠移到 .dropdown 上時，顯示內容 */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body>
+
+    <H1>
+        <div class="h1">
+            <p style="color: aqua;">kkbox</p>
+            <div class="h1_1">
+                <a href="https://www.kkbox.com/tw/tc/feature">特色功能</a>
+                <a href="https://ssl.kkbox.com/tw/billing/index.php">
+                    訂閱方案
+                </a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">娛樂情報</button>
+                    <div class="dropdown-content">
+                        <a href="https://www.kkbox.com/tw/tc/info/">音樂趨勢</a>
+                        <a href="#">音樂排行榜</a>
+                        <a href="#">年度風雲榜</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">會員服務</button>
+                    <div class="dropdown-content">
+                        <a href="#">付費及儲值</a>
+                        <a href="#">會員中心</a>
+                        <a href="#">服務中心</a>
+                        <a href="#">KKBOX 服務條款</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">會員服務</button>
+                    <div class="dropdown-content">
+                        <a href="#">付費及儲值</a>
+                        <a href="#">會員中心</a>
+                        <a href="#">服務中心</a>
+                        <a href="#">KKBOX 服務條款</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">會員服務</button>
+                    <div class="dropdown-content">
+                        <a href="#">關於科科科技</a>
+                        <a href="#">關於 KKBOX</a>
+                        <a href="#">新聞中心</a>
+                        <a href="#">廣告合作</a>
+                        <a href="#">人才招募</a>
+                        <a href="#">校園大使</a>
+                        <a href="#">聯絡我們</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </H1>
+
+    <table>
+        <td>
+            <img src="" alt="">
+        </td>
+        <td>
+            歌曲
+            Heroine
+            <img src="" alt="Maroon 5 (魔力紅)">Maroon 5
+        </td>
+        <br>
+        <hr>
+        <td class="a1">出自專輯
+            Heroine
+            2026/05/01
+            專輯曲目
+            1Heroine
+        </td>
+        <td class="a2">
+            作詞：Adam Levine, John Ryan, Jacob Kasher Hindlin, Philip Plested & Michael Pollack
+            作曲：Adam Levine, John Ryan, Jacob Kasher Hindlin, Philip Plested & Michael Pollack
+            製作：John Ryan
+
+            Nothing makes a room feel emptier
+            Than wishing you were in it
+            Nothing makes a heart feel heavier
+            Than pieces of it missing
+
+            I've been in the cold,
+            42 below, fucking miserable
+            I need you right now
+            Hanging on the edge,
+            Fingertips are red
+            I'm about to...
+            Fall
+
+            Baby, baby
+            You could save me
+            You could be my
+            Heroine
+
+            Baby, baby
+            You could save me
+            You could be my
+            Heroine
+
+            Oh-oh, where'd you go, where'd you go, baby?
+            Oh-oh, need to know, need to know now
+            Oh-oh, where'd you go, where'd you go, baby?
+            You could bе my
+            Heroine
+
+            Nothing makes thе sky look prettier (Prettier)
+            Than flying through it with ya
+            Tryna catch a read,
+            Catch a tempurature
+            Do you miss me?
+            When I miss ya? (Oh)
+
+            I've been in the cold,
+            42 below, fucking miserable
+            I need you right now (Right now)
+            Hanging on the edge,
+            Fingertips are red
+            I'm about to...
+            Fall
+
+            Baby, baby (Ooh)
+            You could save me
+            You could be my
+            Heroine (Could be my)
+
+            Baby, baby (You could)
+            You could save me (You could)
+            You could be my
+            Heroine
+
+            Oh-oh, where'd you go?
+            Where'd you go, baby? (Where'd you go?)
+            Oh-oh, need to know, need to know now
+            Oh-oh, where'd you go?
+            Where'd you go, baby?
+            You could be my
+            Heroine
+
+            You could be, you could be my
+            You could be my medicine (Oh-oh)
+            You could be, you could be my
+            You could be my everything (Hey, yeah; Ooh)
+            You could be, you could be my
+            You could be my medicine (Ooh; Oh-oh)
+            On my knees, you know I need my—
+        </td>
+    </table>
+</body>
+
+</html>
